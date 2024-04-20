@@ -15,7 +15,7 @@ const HeroSection = () => {
         <p className="text-2xl  text-black mb-8  tracking-wide leading-relaxed">
           Let someone take care of your shopping needs while you relax.
         </p>
-        <button className="bg-[#F2A846] text-black py-2 px-6 rounded-full font-semibold hover:bg-[#007F73] hover:text-black mb-6 lg:mb-0">
+        <button className=" transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300bg-[#F2A846] text-black py-2 px-6 rounded-full font-semibold hover:bg-[#007F73] hover:text-black mb-6 lg:mb-0">
           Get Started
         </button>
       </div>
