@@ -1,11 +1,21 @@
+import  {RouterProvider, createBrowserRouter} from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Login from "./pages/login";
+import Register from "./pages/register";
+import Profile from "./pages/profile"
 
-import './App.css';
+const router = createBrowserRouter([
+  {path: "/", element: <Homepage/>},
+  {path: "/login", element: <Login/>},
+  {path: "/register", element: <Register/>},
+  {path: "/profile", element: <Profile/>}
+])
 
 function App() {
   return (
-    <div >
-     <p className='text-orange-500'>test</p>
-    </div>
+    <>
+    <RouterProvider router={router}/>
+    </>
   );
 }
 
