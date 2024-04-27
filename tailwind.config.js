@@ -10,7 +10,7 @@ module.exports = withMT({
   ],
     theme: {
       extend: {
-        backgroundImage: { 'background': "url('/src/assets/orange-bg.jpg')" },
+        backgroundImage: { 'background': "url('/src/assets/orange-bg.jpg')", },
         colors: {
           deepGreen: '#007F73',
           orangeOne: '#F2AA4C'

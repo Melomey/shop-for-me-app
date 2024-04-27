@@ -29,8 +29,8 @@ const HeroSection = () => {
       </div>
       <img src="/fettis/confetti1.svg" alt="" className="absolute w-20 h-20 top-20 left-52"/>
       <img src="/fettis/confetti2.svg" alt="" className="absolute w-20 h-20 top-40 right-96"/>
-      <img src="/fettis/confetti3.svg" alt="" className="absolute w-20 h-20 top-60 right-6"/>
-      {/* <img src="/fettis/confetti4.svg" alt="" className="absolute w-20 h-20 bottom-52 right-62"/> */}
+      {/* <img src="/fettis/confetti3.svg" alt="" className="absolute w-20 h-20 top-60 right-6"/> */}
+      <img src="/fettis/confetti4.svg" alt="" className="absolute w-20 h-20 top-60 right-6"/>
       {/* <img src="/fettis/confetti5.svg" alt="" className="absolute w-20 h-20 bottom-48 right-52"/> */}
       <img src="/fettis/confetti6.svg" alt="" className="absolute w-20 h-20 bottom-32 left-80"/>
       <img src="/fettis/confetti7.svg" alt="" className="absolute w-20 h-20 bottom-20 left-80"/>
