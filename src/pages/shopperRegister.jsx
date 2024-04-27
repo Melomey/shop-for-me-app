@@ -1,46 +1,53 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import logo from "../assets/rider-2.png";
+import { Link } from 'react-router-dom';
+import { motion } from "framer-motion";
+import { Fade } from "react-swift-reveal";
 
-function Register(props) {
-  const [username, setUsername] = useState("");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-
-  const handleSignup = () => {
-    // Handle signup logic here
-  };
+function ShopperRegister() {
 
   return (
-    <div className="h-screen bg-[#FFF1DA] flex justify-center items-center w-full">
-      <form method="POST" action="#">
-        <div className="bg-white px-10 py-8 rounded-xl w-screen shadow-xl max-w-sm">
+    <div className="h-screen bg-[#FFF1DA] flex justify-center items-center">
+      {/* Logo Section */}
+      <div className="w-1/2">
+        <Fade left duration={2000} delay={500} distance="100px">
+          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+            <img src={logo} alt="Logo" className="mx-auto w-3/4" />
+          </motion.div>
+        </Fade>
+      </div>
+
+      {/* Registration Form Section */}
+      <div className="w-1/2">
+        <form method="POST" action="#" className="bg-white px-10 py-8 rounded-xl shadow-xl max-w-sm">
           <div className="space-y-4">
             <h1 className="text-center text-2xl font-semibold text-gray-600">
               Register
             </h1>
             <hr />
+            {/* Username Input */}
             <div className="flex items-center border-2 py-2 px-3 rounded-md mb-4">
               <input
                 className="pl-2 outline-none border-none w-full"
                 type="text"
                 name="Username"
-                value={username}
+                value=""
                 placeholder="Username"
-                onChange={(e) => setUsername(e.target.value)}
+                required
               />
             </div>
+            {/* Name Input */}
             <div className="flex items-center border-2 py-2 px-3 rounded-md mb-4">
               <input
                 className="pl-2 outline-none border-none w-full"
                 type="text"
                 name="Name"
-                value={name}
+                value=""
                 placeholder="Name"
-                onChange={(e) => setName(e.target.value)}
+                required
               />
             </div>
+            {/* Email Input */}
             <div className="flex items-center border-2 py-2 px-3 rounded-md mb-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,12 +67,12 @@ function Register(props) {
                 className="pl-2 outline-none border-none w-full"
                 type="email"
                 name="email"
-                value={email}
+                value=""
                 placeholder="Email"
                 required
-                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
+            {/* Password Input */}
             <div className="flex items-center border-2 py-2 px-3 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,12 +90,12 @@ function Register(props) {
                 className="pl-2 outline-none border-none w-full"
                 type="password"
                 name="password"
-                id=""
+                id="password"
                 placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                required
               />
             </div>
+            {/* Confirm Password Input */}
             <div className="flex items-center border-2 py-2 px-3 rounded-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,14 +113,14 @@ function Register(props) {
                 className="pl-2 outline-none border-none w-full"
                 type="password"
                 name="confirmPassword"
-                id=""
+                id="confirmPassword"
                 placeholder="Confirm Password"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
               />
             </div>
           </div>
 
+          {/* Register Button */}
           <button
             type="submit"
             value="login"
@@ -123,24 +130,21 @@ function Register(props) {
             Register
           </button>
 
-          <hr />
+          {/* Login Link */}
           <div className="flex justify-center items-center mt-4">
             <p className="inline-flex items-center text-gray-700 font-medium text-xs text-center">
               <span className="ml-2">
                 Already have an account?
-                <Link
-                  to="/login"
-                  className="text-xs ml-2 text-blue-500 font-semibold"
-                >
+                <Link to="/shopperSignin" className="text-xs ml-2 text-blue-500 font-semibold">
                   login &rarr;
                 </Link>
               </span>
             </p>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 }
 
-export default Register;
+export default ShopperRegister;
