@@ -39,7 +39,7 @@ const MakeItemListContent = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Manage Item List</h1>
+      <h1 className="text-3xl mt-14 font-bold mb-4">Manage Item List</h1>
 
       {/* Add ItemListForm component */}
       <ItemListForm formData={formData} handleSubmit={handleSubmit} />

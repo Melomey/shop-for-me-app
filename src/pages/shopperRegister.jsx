@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "../assets/rider-2.png";
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion";
 import { Fade } from "react-swift-reveal";
 
 function ShopperRegister() {
+  // State variables for input fields
+  const [username, setUsername] = useState('');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
 
   return (
     <div className="h-screen bg-[#FFF1DA] flex justify-center items-center">
@@ -31,7 +37,8 @@ function ShopperRegister() {
                 className="pl-2 outline-none border-none w-full"
                 type="text"
                 name="Username"
-                value=""
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 placeholder="Username"
                 required
               />
@@ -42,7 +49,8 @@ function ShopperRegister() {
                 className="pl-2 outline-none border-none w-full"
                 type="text"
                 name="Name"
-                value=""
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Name"
                 required
               />
@@ -67,7 +75,8 @@ function ShopperRegister() {
                 className="pl-2 outline-none border-none w-full"
                 type="email"
                 name="email"
-                value=""
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
                 required
               />
@@ -91,6 +100,8 @@ function ShopperRegister() {
                 type="password"
                 name="password"
                 id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
                 required
               />
@@ -114,6 +125,8 @@ function ShopperRegister() {
                 type="password"
                 name="confirmPassword"
                 id="confirmPassword"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
                 placeholder="Confirm Password"
                 required
               />
