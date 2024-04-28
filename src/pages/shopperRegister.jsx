@@ -134,6 +134,7 @@ function ShopperRegister() {
           </div>
 
           {/* Register Button */}
+          <Link to='/shopperSignin'>
           <button
             type="submit"
             value="login"
@@ -142,6 +143,7 @@ function ShopperRegister() {
           >
             Register
           </button>
+          </Link>
 
           {/* Login Link */}
           <div className="flex justify-center items-center mt-4">
