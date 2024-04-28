@@ -21,12 +21,14 @@ const NavBar = () => {
           >
             How It Works
           </button>
+          <Link to='/services'>
           <button
            
             className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-black px-3 py-1 mr-4 hover:bg-[#F2AA4C] hover:text-white rounded"
           >
             Services
           </button>
+          </Link>
           <Link to='/login'>
           <button
           

@@ -6,7 +6,7 @@ import Supplies from "../assets/household.png"
 const Services = () => {
   return (
 <>
-<div className="bg-[#b0e8d0] text-center">
+<div className="bg-[#b0e8d0] text-center " id='services'>
 <h2 className="text-4xl text-black font-bold pt-10">Services</h2>
     <div className="p-10 flex flex-wrap items-center justify-center ">
       

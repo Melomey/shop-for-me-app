@@ -27,6 +27,7 @@ const ItemListForm = ({ handleSubmit }) => {
             onChange={(e) => setTitle(e.target.value)}
             className="px-4 py-2 mr-2 border border-gray-300 rounded-md"
           />
+          <br/>
           <input
             type="text"
             name="location"
@@ -35,15 +36,17 @@ const ItemListForm = ({ handleSubmit }) => {
             onChange={(e) => setLocation(e.target.value)}
             className="px-4 py-2 mr-2 border border-gray-300 rounded-md"
           />
+          <br/>
           <input
-            type="text"
+            type="field"
             name="description"
             value={description}
             placeholder="Description"
             onChange={(e) => setDescription(e.target.value)}
             className="px-4 py-2 mr-2 border border-gray-300 rounded-md"
           />
-          <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded-md">Add Item</button>
+          <br/>
+          <button type="submit" className="px-4 py-2 bg-blue-500 text-white flex item-center rounded-md">Add Item</button>
         </form>
       </div>
     </div>
