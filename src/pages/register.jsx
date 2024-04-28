@@ -113,7 +113,7 @@ function Register(props) {
               />
             </div>
           </div>
-
+          <Link to='/login'>
           <button
             type="submit"
             value="login"
@@ -122,6 +122,7 @@ function Register(props) {
           >
             Register
           </button>
+          </Link>
 
           <hr />
           <div className="flex justify-center items-center mt-4">
